@@ -1,0 +1,1 @@
+<#assign HTTP_PATH="http://localhost:8080/bootstrap-sample" />

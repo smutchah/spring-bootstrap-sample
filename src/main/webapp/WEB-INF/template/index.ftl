@@ -1,3 +1,5 @@
+<#compress>
+<#include "include/domain.ftl">
 <html>
 <head>
 <#include "include/header.ftl">
@@ -5,8 +7,8 @@
 <body>
 idnex
 あいうえお
-枳殻
 髙
+<a href="${HTTP_PATH}">back</a>
 <div class="container">
   <div class="row">
     <div class="span4 offset4 well">
@@ -26,3 +28,4 @@ idnex
 <#include "include/footer.ftl">
 </body>
 </html>
+</#compress>
