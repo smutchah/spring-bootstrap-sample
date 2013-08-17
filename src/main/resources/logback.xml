@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE logback>
+<configuration>
+
+  <appender name="application" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>/usr/local/tomcat/logs/bootstrap_sample.log</file>
+    <append>true</append>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d{yyyy/MM/dd HH:mm:ss} [%level] - %logger{0}:%L - %m%n</Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <FileNamePattern>/usr/local/tomcat/logs/bootstrap_sample.log.%d{yyyy-MM-dd}.gz</FileNamePattern>
+      <maxHistory>10</maxHistory>
+    </rollingPolicy>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="application" />
+  </root>
+
+</configuration>
