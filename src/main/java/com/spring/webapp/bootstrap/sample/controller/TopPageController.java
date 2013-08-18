@@ -11,8 +11,8 @@ public class TopPageController {
 
 	private static final Logger log = LoggerFactory.getLogger(TopPageController.class);
 
-	@RequestMapping(value="web/top", method=RequestMethod.GET)
-	public String getTopPage() {
+	@RequestMapping(value="/web/top.do", method=RequestMethod.GET)
+	public String getTopPage() throws Exception {
 		log.info("topPage Comming");
 		return "index";
 	}

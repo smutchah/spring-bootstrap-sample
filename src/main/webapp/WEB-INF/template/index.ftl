@@ -5,27 +5,23 @@
 <#include "include/header.ftl">
 </head>
 <body>
+
+<div class="span4 well">
+  <div class="row">
+    <div class="span1"><a href="http://critterapp.pagodabox.com/others/admin" class="thumbnail"><img src="http://critterapp.pagodabox.com/img/user.jpg" alt=""></a></div>
+    <div class="span3">
+      <p>admin</p>
+      <p><strong>First Last Name</strong></p>
+      <span class=" badge badge-warning">8 messages</span> <span class=" badge badge-info">15 followers</span>
+    </div>
+  </div>
+</div>
+
+<#include "include/footer.ftl">
+</body>
 idnex
 あいうえお
 髙
 <a href="${HTTP_PATH}">back</a>
-<div class="container">
-  <div class="row">
-    <div class="span4 offset4 well">
-      <legend>Please Sign In</legend>
-      <div class="alert alert-error">
-        <a class="close" data-dismiss="alert" href="#">×</a>Incorrect Username or Password!
-      </div>
-      <form method="POST" action="" accept-charset="UTF-8">
-        <input type="text" id="username" class="span4" name="username" placeholder="Username">
-        <input type="password" id="password" class="span4" name="password" placeholder="Password">
-        <label class="checkbox"><input type="checkbox" name="remember" value="1"> Remember Me</label>
-        <button type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
-      </form>
-    </div>
-  </div>
-</div>
-<#include "include/footer.ftl">
-</body>
 </html>
 </#compress>
