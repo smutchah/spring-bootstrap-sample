@@ -1,8 +1,8 @@
-<#compress>
-<#include "include/domain.ftl">
+#include("include/domain.vm")
 <html>
 <head>
-<#include "include/header.ftl">
+#include("include/header.vm")
+#include("include/navbar.vm")
 </head>
 <body>
 
@@ -17,11 +17,9 @@
   </div>
 </div>
 
-<#include "include/footer.ftl">
+#include("include/footer.vm")
 </body>
 idnex
 あいうえお
 髙
-<a href="${HTTP_PATH}">back</a>
 </html>
-</#compress>
